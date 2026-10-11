@@ -120,13 +120,34 @@
                     <div class="space-y-3">
                         <h5 class="font-bold text-sm text-stone-700 flex items-center gap-1">🥖 פותחים מכל הלב</h5>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <div class="flex items-center justify-between p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm">
-                                <div>
-                                    <div class="font-bold text-xs text-stone-900">לחם הבית / מחמצת לבחירה (₪22)</div>
-                                    <div class="text-[11px] text-stone-500">לצד מטבל שמן זית, קונפי שום, טפנד זיתים, ריבת בצל</div>
+                            <div class="p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-xs text-stone-900">לחם הבית / מחמצת (₪22)</div>
+                                        <div class="text-[11px] text-stone-500">כולל מטבלים לבחירה</div>
+                                    </div>
+                                    <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
                                 </div>
-                                <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
+                                <div class="grid grid-cols-2 gap-1.5 pt-1 border-t border-stone-100 text-[11px]">
+                                    <div>
+                                        <label class="block text-stone-600 mb-0.5 font-medium">סוג לחם:</label>
+                                        <select class="item-option w-full p-1 rounded-lg border border-stone-200 text-[11px] bg-stone-50">
+                                            <option value="לחם הבית">לחם הבית</option>
+                                            <option value="לחם מחמצת">לחם מחמצת</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-stone-600 mb-0.5 font-medium">מטבל עיקרי:</label>
+                                        <select class="item-option w-full p-1 rounded-lg border border-stone-200 text-[11px] bg-stone-50">
+                                            <option value="שמן זית וקונפי שום">שמן זית & קונפי שום</option>
+                                            <option value="טפנד זיתים">טפנד זיתים</option>
+                                            <option value="ריבת בצל">ריבת בצל</option>
+                                            <option value="הכל מהכל">הכל מהכל</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="flex items-center justify-between p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm">
                                 <div>
                                     <div class="font-bold text-xs text-stone-900">בורקס גבינה (₪16)</div>
@@ -134,13 +155,34 @@
                                 </div>
                                 <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
                             </div>
-                            <div class="flex items-center justify-between p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm">
-                                <div>
-                                    <div class="font-bold text-xs text-stone-900">קרואסון אנטיפסטי (₪22)</div>
-                                    <div class="text-[11px] text-stone-500">גבינת שמנת, בולגרית, תפוא/בטטה/חציל לבחירה</div>
+
+                            <div class="p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-xs text-stone-900">קרואסון אנטיפסטי (₪22)</div>
+                                        <div class="text-[11px] text-stone-500">גבינת שמנת / בולגרית + ירק</div>
+                                    </div>
+                                    <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
                                 </div>
-                                <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
+                                <div class="grid grid-cols-2 gap-1.5 pt-1 border-t border-stone-100 text-[11px]">
+                                    <div>
+                                        <label class="block text-stone-600 mb-0.5 font-medium">גבינה לבחירה:</label>
+                                        <select class="item-option w-full p-1 rounded-lg border border-stone-200 text-[11px] bg-stone-50">
+                                            <option value="גבינת שמנת">גבינת שמנת</option>
+                                            <option value="גבינה בולגרית">גבינה בולגרית</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-stone-600 mb-0.5 font-medium">תוספת ירק:</label>
+                                        <select class="item-option w-full p-1 rounded-lg border border-stone-200 text-[11px] bg-stone-50">
+                                            <option value="תפוח אדמה">תפוח אדמה</option>
+                                            <option value="בטטה">בטטה</option>
+                                            <option value="חציל">חציל</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="flex items-center justify-between p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm">
                                 <div>
                                     <div class="font-bold text-xs text-stone-900">מאפה גבינות ותרד (₪18)</div>
@@ -148,6 +190,80 @@
                                 </div>
                                 <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: טוסטים וכריכים -->
+                    <div class="space-y-3">
+                        <h5 class="font-bold text-sm text-stone-700 flex items-center gap-1">🥪 טוסטים וכריכים</h5>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+                            <div class="p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-xs text-stone-900">טוסט של פעם (₪20)</div>
+                                        <div class="text-[11px] text-stone-500">גבינה צהובה ומרכיבים לבחירה</div>
+                                    </div>
+                                    <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
+                                </div>
+                                <div class="grid grid-cols-2 gap-1.5 pt-1 border-t border-stone-100 text-[11px]">
+                                    <div>
+                                        <label class="block text-stone-600 mb-0.5 font-medium">רוטב בסיס:</label>
+                                        <select class="item-option w-full p-1 rounded-lg border border-stone-200 text-[11px] bg-stone-50">
+                                            <option value="רוטב פיצה">רוטב פיצה</option>
+                                            <option value="גבינת שמנת">גבינת שמנת</option>
+                                            <option value="חמאה">חמאה</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-stone-600 mb-0.5 font-medium">תוספות:</label>
+                                        <select class="item-option w-full p-1 rounded-lg border border-stone-200 text-[11px] bg-stone-50">
+                                            <option value="זיתים ירוקים">זיתים ירוקים</option>
+                                            <option value="עגבניות">עגבניות</option>
+                                            <option value="גם זיתים וגם עגבניות">זיתים + עגבניות</option>
+                                            <option value="ללא תוספות">ללא תוספות</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-xs text-stone-900">טוסט בוטיק (₪24)</div>
+                                        <div class="text-[11px] text-stone-500">צהובה, בולגרית, שום שמיר ופסטו</div>
+                                    </div>
+                                    <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
+                                </div>
+                                <div class="grid grid-cols-1 gap-1.5 pt-1 border-t border-stone-100 text-[11px]">
+                                    <div>
+                                        <label class="block text-stone-600 mb-0.5 font-medium">תוספת מועדפת:</label>
+                                        <select class="item-option w-full p-1 rounded-lg border border-stone-200 text-[11px] bg-stone-50">
+                                            <option value="פטריות ובצל">פטריות ובצל</option>
+                                            <option value="פטריות בלבד">פטריות בלבד</option>
+                                            <option value="בצל בלבד">בצל בלבד</option>
+                                            <option value="ללא פטריות/בצל">ללא פטריות/בצל</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm">
+                                <div>
+                                    <div class="font-bold text-xs text-stone-900">כריך סביח (₪20)</div>
+                                    <div class="text-[11px] text-stone-500">חומוס, עריסה, חציל, ביצה קשה</div>
+                                </div>
+                                <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
+                            </div>
+
+                            <div class="flex items-center justify-between p-3.5 bg-white rounded-2xl border border-stone-200 shadow-sm">
+                                <div>
+                                    <div class="font-bold text-xs text-stone-900">כריך בייגל יווני (₪24)</div>
+                                    <div class="text-[11px] text-stone-500">גבינת שמנת, בולגרית, זיתים שחורים, חסה, מלפפון</div>
+                                </div>
+                                <input type="number" data-category="menu-item" min="0" max="3" value="0" class="menu-qty w-14 text-center py-1.5 rounded-xl border border-stone-300 bg-stone-50 text-xs font-bold" onchange="calculateTotalItems()">
+                            </div>
+
                         </div>
                     </div>
 
@@ -396,23 +512,8 @@
                 <div id="aggregated-menu-list" class="bg-white p-4 rounded-2xl border border-stone-200 grid grid-cols-1 md:grid-cols-2 gap-2 text-xs shadow-sm"></div>
             </div>
 
-            <!-- Table section for orders list -->
             <h4 class="font-bold text-sm text-stone-700 mb-2">רשימת ההזמנות המלאה לפי שולחנות:</h4>
-            <div class="overflow-x-auto rounded-2xl border border-stone-200 bg-white shadow-sm mb-6 max-h-80 overflow-y-auto">
-                <table class="w-full text-right border-collapse text-xs">
-                    <thead>
-                        <tr class="bg-stone-800 text-amber-100 font-bold border-b border-stone-300 sticky top-0 z-10">
-                            <th class="p-3 text-center border-l border-stone-700 w-12">#</th>
-                            <th class="p-3 border-l border-stone-700">שם התלמיד/ה וכיתה</th>
-                            <th class="p-3 border-l border-stone-700">מלווים (כמה/מי באים)</th>
-                            <th class="p-3">מה הוזמן</th>
-                        </tr>
-                    </thead>
-                    <tbody id="orders-table-body" class="divide-y divide-stone-200 text-stone-800">
-                        <!-- Table rows generated dynamically -->
-                    </tbody>
-                </table>
-            </div>
+            <div id="orders-list" class="space-y-3 mb-6 max-h-60 overflow-y-auto"></div>
 
             <div class="flex justify-between items-center pt-4 border-t">
                 <button onclick="clearOrders()" class="bg-rose-50 hover:bg-rose-100 text-rose-700 text-xs font-bold py-2.5 px-4 rounded-xl transition border border-rose-200">
@@ -438,83 +539,6 @@
     </div>
 
     <script>
-        let orders = JSON.parse(localStorage.getItem('school_cafe_orders_v7') || '[]');
-        let payboxUrl = localStorage.getItem('school_cafe_paybox_url') || 'https://links.payboxapp.com/kadh2Qh256b';
-        let bitUrl = localStorage.getItem('school_cafe_bit_url') || 'https://www.bitpay.co.il/app/share-info?i=bUuHLjp-&j=true';
-
-        window.addEventListener('DOMContentLoaded', () => {
-            updatePaymentLinksDisplay();
-        });
-
-        function updatePaymentLinksDisplay() {
-            const pbBtn = document.getElementById('paybox-link-btn');
-            const bitBtn = document.getElementById('bit-link-btn');
-            
-            const pbInput = document.getElementById('manager-paybox-url');
-            const bitInput = document.getElementById('manager-bit-url');
-            if (pbInput) pbInput.value = payboxUrl;
-            if (bitInput) bitInput.value = bitUrl;
-
-            if (!payboxUrl || payboxUrl.trim() === '') {
-                pbBtn.href = '#';
-                pbBtn.className = "inline-flex items-center justify-center gap-2 bg-stone-200 text-stone-400 font-bold py-3 px-4 rounded-xl text-xs cursor-not-allowed";
-                pbBtn.innerHTML = "<span>🔗 PayBox טרם הוגדר</span>";
-            } else {
-                pbBtn.href = payboxUrl;
-                pbBtn.className = "inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-xl text-xs shadow transition";
-                pbBtn.innerHTML = "<span>🔗 מעבר לתשלום ב-PayBox</span>";
-            }
-
-            if (!bitUrl || bitUrl.trim() === '') {
-                bitBtn.href = '#';
-                bitBtn.className = "inline-flex items-center justify-center gap-2 bg-stone-200 text-stone-400 font-bold py-3 px-4 rounded-xl text-xs cursor-not-allowed";
-                bitBtn.innerHTML = "<span>🔗 Bit טרם הוגדר</span>";
-            } else {
-                bitBtn.href = bitUrl;
-                bitBtn.className = "inline-flex items-center justify-center gap-2 bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-4 rounded-xl text-xs shadow transition";
-                bitBtn.innerHTML = "<span>🔗 מעבר לתשלום ב-Bit</span>";
-            }
-        }
-
-        function savePaymentLink(type) {
-            if (type === 'paybox') {
-                payboxUrl = document.getElementById('manager-paybox-url').value.trim();
-                localStorage.setItem('school_cafe_paybox_url', payboxUrl);
-                showAlert('נשמר בהצלחה', 'קישור ה-PayBox עודכן בהצלחה.', '✅');
-            } else {
-                bitUrl = document.getElementById('manager-bit-url').value.trim();
-                localStorage.setItem('school_cafe_bit_url', bitUrl);
-                showAlert('נשמר בהצלחה', 'קישור ה-Bit עודכן בהצלחה.', '✅');
-            }
-            updatePaymentLinksDisplay();
-        }
-
-        function showAlert(title, text, icon = '⚠️') {
-            document.getElementById('alert-title').innerText = title;
-            document.getElementById('alert-text').innerText = text;
-            document.getElementById('alert-icon').innerText = icon;
-            document.getElementById('custom-alert').classList.remove('hidden');
-        }
-
-        function closeAlert() {
-            document.getElementById('custom-alert').classList.add('hidden');
-        }
-
-        function calculateTotalItems() {
-            const inputs = document.querySelectorAll('.menu-qty');
-            let sum = 0;
-            inputs.forEach(input => {
-                sum += parseInt(input.value) || 0;
-            });
-            const counter = document.getElementById('total-items-counter');
-            counter.innerText = `נבחרו: ${sum} / 3 מנות`;
-            if (sum > 3) {
-                counter.className = "text-xs bg-rose-100 text-rose-800 font-bold px-3.5 py-1.5 rounded-full animate-pulse";
-            } else {
-                counter.className = "text-xs bg-stone-200 text-stone-800 font-bold px-3.5 py-1.5 rounded-full";
-            }
-        }
-
         function submitOrder(event) {
             event.preventDefault();
 
@@ -530,7 +554,19 @@
                 const qty = parseInt(input.value) || 0;
                 if (qty > 0) {
                     totalSelected += qty;
-                    const itemName = input.closest('.flex').querySelector('div div, div.font-bold').innerText;
+                    const container = input.closest('.p-3.5');
+                    let itemName = container.querySelector('.font-bold.text-xs').innerText;
+
+                    // Collect selected options within this item if present
+                    const options = container.querySelectorAll('.item-option');
+                    if (options.length > 0) {
+                        let optsText = [];
+                        options.forEach(opt => {
+                            optsText.push(opt.value);
+                        });
+                        itemName += ` [${optsText.join(', ')}]`;
+                    }
+
                     selectedItemsList.push({ name: itemName, qty: qty });
                 }
             });
@@ -605,14 +641,10 @@
 
             let totalItemsCount = 0;
             let itemCountsMap = {};
-            let tableRowsHTML = '';
+            let listHTML = '';
 
             if (orders.length === 0) {
-                tableRowsHTML = `
-                    <tr>
-                        <td colspan="4" class="text-xs text-stone-400 text-center py-6">טרם התקבלו הזמנות לשבוע זה.</td>
-                    </tr>
-                `;
+                listHTML = '<p class="text-xs text-stone-400 text-center py-6">טרם התקבלו הזמנות לשבוע זה.</p>';
             } else {
                 orders.forEach((o, index) => {
                     totalItemsCount += o.totalCount;
@@ -620,18 +652,25 @@
                         itemCountsMap[item.name] = (itemCountsMap[item.name] || 0) + item.qty;
                     });
 
-                    let itemsText = o.items.map(i => `<span class="inline-block bg-stone-100 border border-stone-200 px-2 py-0.5 rounded text-[11px] font-bold text-stone-700 ml-1 mb-1">${i.name} (×${i.qty})</span>`).join('');
+                    let itemsText = o.items.map(i => `${i.name} (כמות: ${i.qty})`).join(' | ');
 
-                    tableRowsHTML += `
-                        <tr class="hover:bg-stone-50 transition-colors">
-                            <td class="p-3 text-center font-bold text-stone-500 border-l border-stone-200">${index + 1}</td>
-                            <td class="p-3 font-bold text-stone-900 border-l border-stone-200">
-                                <div>${o.studentName}</div>
-                                <div class="text-[11px] font-normal text-amber-800">כיתה: ${o.studentClass}</div>
-                            </td>
-                            <td class="p-3 text-stone-700 border-l border-stone-200 font-medium">${o.parentsAttending}</td>
-                            <td class="p-3">${itemsText || '<span class="text-stone-400">לא נבחרו מנות</span>'}</td>
-                        </tr>
+                    listHTML += `
+                        <div class="bg-stone-50 p-4 rounded-2xl border border-stone-200 text-xs flex flex-col gap-2 shadow-sm">
+                            <div class="flex justify-between items-center border-b border-stone-200 pb-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="bg-stone-800 text-amber-100 px-2.5 py-1 rounded-lg font-bold text-[11px]">שולחן #${index + 1}</span>
+                                    <span class="font-black text-stone-900 text-sm">👤 תלמיד/ה: ${o.studentName}</span>
+                                </div>
+                                <span class="bg-amber-100 text-stone-900 font-bold px-3 py-1 rounded-lg border border-amber-300 text-xs">🏫 כיתה: ${o.studentClass}</span>
+                            </div>
+                            <div class="flex justify-between text-stone-700">
+                                <span><b>מלווים:</b> ${o.parentsAttending}</span>
+                                <span class="text-stone-500">תאריך: ${o.date}</span>
+                            </div>
+                            <div class="text-stone-800 bg-white p-3 rounded-xl border border-stone-200">
+                                <b>פריטים שהוזמנו:</b> ${itemsText}
+                            </div>
+                        </div>
                     `;
                 });
             }
@@ -652,7 +691,7 @@
 
             document.getElementById('stat-total-items').innerText = totalItemsCount;
             document.getElementById('aggregated-menu-list').innerHTML = aggregatedHTML;
-            document.getElementById('orders-table-body').innerHTML = tableRowsHTML;
+            document.getElementById('orders-list').innerHTML = listHTML;
         }
 
         function clearOrders() {
