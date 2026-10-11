@@ -575,7 +575,6 @@
     <script>
         function submitOrder(event) {
             event.preventDefault();
-```javascript
             const paymentMethod = document.querySelector(
                 'input[name="paymentMethod"]:checked'
             )?.value;
@@ -640,7 +639,6 @@
                 return;
             }
 
-            ```javascript
             const newOrder = {
                 id: Date.now(),
                 studentName,
@@ -652,7 +650,7 @@
                 paymentConfirmed: paymentConfirmed,
                 date: new Date().toLocaleDateString('he-IL')
             };
-```
+
             };
 
       
